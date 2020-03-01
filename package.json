@@ -4,6 +4,7 @@
   "description": "Desktop music player",
   "main": "main.js",
   "scripts": {
+    "start-dev": "nodemon --watch * --exec 'electron .'",
     "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,5 +23,8 @@
   "homepage": "https://github.com/gyomber32/electron-AGMusic#readme",
   "dependencies": {
     "electron": "^8.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
   }
 }
