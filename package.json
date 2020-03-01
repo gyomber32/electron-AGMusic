@@ -1,0 +1,26 @@
+{
+  "name": "electron-agmusic",
+  "version": "1.0.0",
+  "description": "Desktop music player",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gyomber32/electron-AGMusic.git"
+  },
+  "keywords": [
+    "electron"
+  ],
+  "author": "Attila Gyomber",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gyomber32/electron-AGMusic/issues"
+  },
+  "homepage": "https://github.com/gyomber32/electron-AGMusic#readme",
+  "dependencies": {
+    "electron": "^8.0.2"
+  }
+}
