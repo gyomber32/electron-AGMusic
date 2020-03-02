@@ -1,13 +1,18 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 .main-windows-container {
-  background: linear-gradient(to bottom right, #000000, #00206f);
   position: absolute;
   width: 100%;
   height: 100%;
-  padding: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  background: linear-gradient(to bottom right, #000000, #00206f);
 }
 
 #lyrics {
@@ -55,7 +60,7 @@
   align-items: center;
   width: 100%;
   border-radius: 5px;
-  padding-bottom: 10px;
+  border-bottom: 10px;
 }
 
 #playlist {

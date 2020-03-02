@@ -8,6 +8,7 @@ let mainWindow;
 const browserWindowOptions = {
     width: 1024,
     height: 768,
+    frame: false,
     webPreferences: {
         nodeIntegration: true
     },
