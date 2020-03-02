@@ -6,8 +6,8 @@ const url = require('url');
 let mainWindow;
 
 const browserWindowOptions = {
-    width: 800,
-    height: 600,
+    width: 1024,
+    height: 768,
     webPreferences: {
         nodeIntegration: true
     },
