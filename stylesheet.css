@@ -11,15 +11,38 @@
 }
 
 #lyrics {
-  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+  border-right: 2px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   height: 100%;
   width: calc(100% / 3);
+}
+
+.lyrics_visible {
+  transform: translateX(0px);
+  transition-duration: 1s;
+}
+
+.lyrics_hidden {
+  transform: translateX(-400px);
+  transition-duration: 1s;
+}
+
+#lyrics_btn {
+  position: relative;
+  float: right;
+  width: 50px;
+  height: 50px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 #player {
   display: flex;
   flex-direction: column;
-  border: 2px solid rgba(255, 255, 255, 0.2);
   height: 100%;
   width: calc(100% / 3);
 }
@@ -32,7 +55,7 @@
   padding-bottom: 50px;
 }
 
-#time{
+#time {
   display: flex;
   align-self: center;
   margin-top: auto;
@@ -64,17 +87,35 @@
   width: calc(100% / 3);
 }
 
+#previous_btn:hover {
+  border-radius: 40px;
+  background-color: rgba(227, 227, 227, 0.2);
+  transition-duration: 0.6s;
+}
+
+#stop_btn:hover {
+  border-radius: 40px;
+  background-color: rgba(227, 227, 227, 0.2);
+  transition-duration: 0.6s;
+}
+
+#play-pause_btn:hover {
+  border-radius: 40px;
+  background-color: rgba(227, 227, 227, 0.2);
+  transition-duration: 0.6s;
+}
+
+#forward_btn:hover {
+  border-radius: 40px;
+  background-color: rgba(227, 227, 227, 0.2);
+  transition-duration: 0.6s;
+}
+
 button {
   width: 70px;
   height: 70px;
   border: none;
   background-color: rgba(255, 255, 255, 0);
-}
-
-button:hover {
-  border-radius: 40px;
-  background-color: rgba(227, 227, 227, 0.2);
-  transition-duration: 0.6s;
 }
 
 img[id$="_btn_icon"] {
