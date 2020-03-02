@@ -1,0 +1,27 @@
+.main-windows-container {
+  background: linear-gradient(to bottom right, #000000, #00206f);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: table;
+  clear: both;
+}
+
+#lyrics {
+  border: 2px solid white;
+  float: left;
+  width: 33.33%;
+}
+
+#player {
+  border: 2px solid white;
+  float: left;
+  width: 33.33%;
+}
+
+#playlist {
+  border: 2px solid white;
+  float: left;
+  width: 33.33%;
+}
