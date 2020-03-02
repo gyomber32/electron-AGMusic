@@ -10,6 +10,16 @@
     <script src="renderer.js"></script>
     <title>AG Music Player</title>
   </head>
+  <header>
+    <div id="header_btns">
+      <button id="minimize_btn">
+        <img id="minimize_btn_icon" src="./src/assets/icons/minimize.png" />
+      </button>
+      <button id="close_btn">
+        <img id="close_btn_icon" src="./src/assets/icons/close.png" />
+      </button>
+    </div>
+  </header>
   <body>
     <div class="main-windows-container">
       <div id="lyrics">
@@ -30,16 +40,16 @@
         </div>
         <div id="time" style="color:white;"><b>03:47</b></div>
         <div id="player_controllers">
-          <button>
+          <button id="previous_btn">
             <img id="previous_btn_icon" src="./src/assets/icons/previous.png" />
           </button>
-          <button>
+          <button id="stop_btn">
             <img id="stop_btn_icon" src="./src/assets/icons/stop.png" />
           </button>
           <button id="play-pause_btn">
             <img id="play-pause_btn_icon" src="./src/assets/icons/play.png" />
           </button>
-          <button>
+          <button id="forward_btn">
             <img id="forward_btn_icon" src="./src/assets/icons/forward.png" />
           </button>
         </div>

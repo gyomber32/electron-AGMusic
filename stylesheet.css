@@ -1,3 +1,38 @@
+header {
+  background: linear-gradient(to right, #000000, #001236);
+  height: 20px;
+}
+
+#header_btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#minimize_btn {
+  width: 10px;
+  height: 10px;
+  padding-right: 15px;
+}
+
+#close_btn {
+  width: 10px;
+  height: 10px;
+  padding-right: 15px;
+}
+
+#minimize_btn_icon {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+}
+
+#close_btn_icon {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+}
+
 body {
   margin: 0;
   overflow-x: hidden;
@@ -7,7 +42,7 @@ body {
 .main-windows-container {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 98%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -59,14 +94,27 @@ body {
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
-  border-radius: 5px;
-  border-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 #playlist {
-  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+  border-left: 2px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   height: 100%;
   width: calc(100% / 3);
+}
+
+#playlist_btn {
+  position: relative;
+  float: left;
+  width: 50px;
+  height: 50px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .playlist_visible {
@@ -86,13 +134,61 @@ button {
   background-color: rgba(255, 255, 255, 0);
 }
 
-button:hover {
+#previous_btn:hover {
   border-radius: 40px;
   background-color: rgba(227, 227, 227, 0.2);
   transition-duration: 0.6s;
 }
 
-img[id$="_btn_icon"] {
+#stop_btn:hover {
+  border-radius: 40px;
+  background-color: rgba(227, 227, 227, 0.2);
+  transition-duration: 0.6s;
+}
+
+#play-pause_btn:hover {
+  border-radius: 40px;
+  background-color: rgba(227, 227, 227, 0.2);
+  transition-duration: 0.6s;
+}
+
+#forward_btn:hover {
+  border-radius: 40px;
+  background-color: rgba(227, 227, 227, 0.2);
+  transition-duration: 0.6s;
+}
+
+#lyrics_btn_icon {
+  width: 25px;
+  height: 25px;
+  opacity: 1;
+}
+
+#previous_btn_icon {
+  width: 25px;
+  height: 25px;
+  opacity: 1;
+}
+
+#stop_btn_icon {
+  width: 25px;
+  height: 25px;
+  opacity: 1;
+}
+
+#play-pause_btn_icon {
+  width: 25px;
+  height: 25px;
+  opacity: 1;
+}
+
+#forward_btn_icon {
+  width: 25px;
+  height: 25px;
+  opacity: 1;
+}
+
+#playlist_btn_icon {
   width: 25px;
   height: 25px;
   opacity: 1;
