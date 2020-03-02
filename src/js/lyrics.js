@@ -4,9 +4,12 @@ lyricsBtn.addEventListener('click', () => {
     const lyricsDiv = document.getElementById('lyrics');
     if (!lyricsDiv.classList.contains('lyrics_hidden')) {
         lyricsDiv.classList.add('lyrics_hidden');
+        lyricsBtn.classList.add('lyrics_btn_hidden');
     } else {
         lyricsDiv.classList.remove('lyrics_hidden');
         lyricsDiv.classList.add('lyrics_visible');
+        lyricsBtn.classList.remove('lyrics_btn_hidden');
+        lyricsBtn.classList.add('lyrics_btn_visible');
     }
 
     /* changes lyrics button icon */

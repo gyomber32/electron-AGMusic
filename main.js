@@ -8,6 +8,8 @@ let mainWindow;
 const browserWindowOptions = {
     width: 1024,
     height: 768,
+    frame: false,
+    //resizable: false,
     webPreferences: {
         nodeIntegration: true
     },
@@ -28,7 +30,7 @@ function createWindow() {
     mainWindow.loadURL(url.format(urlOptions));
 
     // opens devtools
-    mainWindow.webContents.openDevTools();
+    //mainWindow.webContents.openDevTools();
 
     mainWindow.on("closed", () => {
         mainWindow = null;
