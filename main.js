@@ -11,7 +11,7 @@ const browserWindowOptions = {
     webPreferences: {
         nodeIntegration: true
     },
-    icon: __dirname + 'assets/icons/AGMusicPlayerLogo.jpg'
+    icon: __dirname + 'assets/AGMusicPlayerLogo.jpg'
 };
 
 const urlOptions = {
@@ -28,7 +28,7 @@ function createWindow() {
     mainWindow.loadURL(url.format(urlOptions));
 
     // opens devtools
-    mainWindow.webContents.openDevTools();
+    //mainWindow.webContents.openDevTools();
 
     mainWindow.on("closed", () => {
         mainWindow = null;

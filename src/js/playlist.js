@@ -2,6 +2,7 @@ const playlistBtn = document.getElementById('playlist_btn');
 
 playlistBtn.addEventListener('click', () => {
 
+    /* hides playlist */
     const playlistDiv = document.getElementById('playlist');
     if (playlistDiv.style.display == '') {
         playlistDiv.style.display = 'none';
