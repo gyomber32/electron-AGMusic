@@ -38,7 +38,19 @@
           <p>Year: <b>1988</b></p>
           <p>Genre: <b>Heavy metal</b></p>
         </div>
-        <div id="time" style="color:white;"><b>03:47</b></div>
+        <div id="progress">
+          <div id="progress-bar"></div>
+        </div>
+        <div id="volume_time">
+          <div id="volume_container">
+            <img id="volume_min" src="./src/assets/icons/volume_min.png" />
+            <div id="volume">
+              <div id="volume-bar"></div>
+            </div>
+            <img id="volume_max" src="./src/assets/icons/volume_max.png" />
+          </div>
+          <div id="time" style="color:white;"><b>03:47</b></div>
+        </div>
         <div id="player_controllers">
           <button id="previous_btn">
             <img id="previous_btn_icon" src="./src/assets/icons/previous.png" />
@@ -67,6 +79,7 @@
 
     <script type="text/javascript" src="./src/js/header.js"></script>
     <script type="text/javascript" src="./src/js/lyrics.js"></script>
+    <script type="text/javascript" src="./src/js/progress-bar.js"></script>
     <script type="text/javascript" src="./src/js/player.js"></script>
     <script type="text/javascript" src="./src/js/playlist.js"></script>
   </body>
