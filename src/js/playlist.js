@@ -1,13 +1,13 @@
 const playlistBtn = document.getElementById('playlist_btn');
 
 playlistBtn.addEventListener('click', () => {
-
     /* hides playlist */
     const playlistDiv = document.getElementById('playlist');
-    if (playlistDiv.style.display == '') {
-        playlistDiv.style.display = 'none';
+    if (!playlistDiv.classList.contains('playlist_hidden')) {
+        playlistDiv.classList.add('playlist_hidden');
     } else {
-        playlistDiv.style.display == 'block'
+        playlistDiv.classList.remove('playlist_hidden');
+        playlistDiv.classList.add('playlist_visible');
     }
 
     /* changes playlist button icon */
