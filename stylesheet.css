@@ -32,6 +32,14 @@
   padding-bottom: 50px;
 }
 
+#time{
+  display: flex;
+  align-self: center;
+  margin-top: auto;
+  font-size: large;
+  padding-bottom: 10px;
+}
+
 #thumbnail {
   display: flex;
   align-self: center;
