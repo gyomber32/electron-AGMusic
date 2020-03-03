@@ -22,7 +22,8 @@
   },
   "homepage": "https://github.com/gyomber32/electron-AGMusic#readme",
   "dependencies": {
-    "electron": "^8.0.2"
+    "electron": "^8.0.2",
+    "music-metadata": "^6.3.4"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"

@@ -8,3 +8,8 @@ playPauseBtn.addEventListener('click', () => {
         playPauseBtnIcon.src = './src/assets/icons/play.png';
     }
 });
+
+const play = (filepath) => {
+    const audio = new Audio(filePath);
+    audio.play();
+}
